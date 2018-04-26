@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "727134730316",
+    "firebase_url": "https://game-5e93d.firebaseio.com",
+    "project_id": "game-5e93d",
+    "storage_bucket": "game-5e93d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727134730316:android:1e8a5997025171f1",
+        "android_client_info": {
+          "package_name": "com.alex.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727134730316-ngfi4bqir0apjae4s6dolg4uikcpvhnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alex.game",
+            "certificate_hash": "ff527e6a00a2610700b9837c0bfa7b882aa0745f"
+          }
+        },
+        {
+          "client_id": "727134730316-fn75pi5uvtufdb1aookg85s7ie9155b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6ndxKkb8hua_uZ8ZUN_ttACGUcRmOw-w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727134730316-fn75pi5uvtufdb1aookg85s7ie9155b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

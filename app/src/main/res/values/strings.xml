@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Game</string>
+    <string name="register">Зареєструватись</string>
+    <string name="login">Увійти</string>
+    <string name="gameName">Правда, чи не правда</string>
+    <string name="loginview">Логін</string>
+    <string name="passwordview">Пароль</string>
+</resources>
