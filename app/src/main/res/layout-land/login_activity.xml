@@ -12,7 +12,7 @@
         android:layout_height="72dp"
         android:layout_marginEnd="59dp"
         android:layout_marginStart="59dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="@string/gameName"
         android:textAlignment="center"
         android:textColor="?android:attr/colorForeground"
@@ -25,15 +25,14 @@
         android:id="@+id/btn_register"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="32dp"
         android:layout_marginEnd="112dp"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="5dp"
         android:text="@string/register"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/google_sign_in" />
 
     <Button
         android:id="@+id/btn_login"
@@ -41,6 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="112dp"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="10dp"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,13 +52,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="85dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -68,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="85dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/pass"
         android:inputType="textPassword"
@@ -76,5 +75,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l_email" />
+
+    <ImageButton
+        android:id="@+id/google_sign_in"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
 
 </android.support.constraint.ConstraintLayout>

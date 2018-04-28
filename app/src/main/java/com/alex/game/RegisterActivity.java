@@ -19,7 +19,6 @@ import java.util.Objects;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListner;
 
     private EditText mEmailField;
     private EditText mPasswordField;
