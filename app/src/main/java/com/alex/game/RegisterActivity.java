@@ -52,6 +52,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                             startActivity(intent);
+                            finish();
 
                         } else
                             Toast.makeText(RegisterActivity.this, "Введенно не вірний email",

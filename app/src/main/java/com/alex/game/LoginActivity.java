@@ -37,6 +37,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.btn_register).setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
+        FirebaseUser mUser = mAuth.getCurrentUser();
+
+        if (mUser != null) {
+            Intent intent = new Intent(getApplicationContext(), MainMenuActivity.class);
+            startActivity(intent);
+            finish();
+        }
         mAuthStateListner = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -53,9 +60,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+        mAuth.addAuthStateListener(mAuthStateListner);
+    }
 
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthStateListner != null) {
+            mAuth.removeAuthStateListener(mAuthStateListner);
+        }
     }
 
     public void signIn(String email, String password) {
@@ -72,6 +85,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                             startActivity(intent);
+                            finish();
                         } else
                             Toast.makeText(LoginActivity.this, "Введенно не вірний email або пароль",
                                     Toast.LENGTH_SHORT).show();

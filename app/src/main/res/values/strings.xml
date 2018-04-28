@@ -3,6 +3,8 @@
     <string name="register">Зареєструватись</string>
     <string name="login">Увійти</string>
     <string name="gameName">Правда, чи не правда</string>
-    <string name="loginview">Логін</string>
-    <string name="passwordview">Пароль</string>
+    <string name="loginView">Логін</string>
+    <string name="passwordView">Пароль</string>
+    <string name="email">Email</string>
+    <string name="pass">Пароль</string>
 </resources>
