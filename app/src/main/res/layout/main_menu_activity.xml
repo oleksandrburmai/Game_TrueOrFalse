@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,25 +26,13 @@
         android:id="@+id/startGame"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginEnd="107dp"
         android:layout_marginStart="107dp"
         android:text="Розпочати гру"
-        app:layout_constraintBottom_toTopOf="@+id/records"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/records"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="107dp"
-        android:layout_marginStart="107dp"
-        android:text="Таблиця рекордів"
-        app:layout_constraintBottom_toTopOf="@+id/profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="297dp" />
 
     <Button
         android:id="@+id/profile"
@@ -52,9 +41,11 @@
         android:layout_marginBottom="226dp"
         android:layout_marginEnd="107dp"
         android:layout_marginStart="107dp"
+        android:layout_marginTop="68dp"
         android:text="Профіль"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startGame" />
 
 </android.support.constraint.ConstraintLayout>
