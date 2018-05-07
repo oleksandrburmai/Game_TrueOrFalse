@@ -60,7 +60,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         if (factsL.get(factId).getIsTrue() == isTrue) {
             result++;
         }
-        if (factId <= factsL.size()) {
+        if (factId <= 4) {
             factV.setText(factsL.get(factId + 1).getFact());
         }
     }
@@ -70,13 +70,23 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v.getId() == R.id.btn_true) {
             factReview(true, idFact);
-            if (idFact < factsL.size() - 1) {
+            if (idFact < 5) {
                 idFact++;
+            }
+            if (idFact == 5) {
+                findViewById(R.id.btn_false).setVisibility(View.INVISIBLE);
+                findViewById(R.id.btn_true).setVisibility(View.INVISIBLE);
+                factV.setText("Поздоровляю ви набрали " + result + " бали");
             }
         } else if (v.getId() == R.id.btn_false) {
             factReview(false, idFact);
-            if (idFact < factsL.size() - 1) {
+            if (idFact < 5) {
                 idFact++;
+            }
+            if (idFact == 5) {
+                findViewById(R.id.btn_false).setVisibility(View.INVISIBLE);
+                findViewById(R.id.btn_true).setVisibility(View.INVISIBLE);
+                factV.setText("Поздоровляю ви набрали " + result + " бали");
             }
         }
     }
@@ -87,11 +97,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         Fact fact3 = new Fact("Людина може прожити без їжі до 45 днів", true);
         Fact fact4 = new Fact("Людина може прожити без води до 10 днів", true);
         Fact fact5 = new Fact("Велику китайську стіну видно з космосу", false);
+        Fact fact6 = new Fact("", true);
         factsL.add(fact1);
         factsL.add(fact2);
         factsL.add(fact3);
         factsL.add(fact4);
         factsL.add(fact5);
+        factsL.add(fact6);
 
     }
 }

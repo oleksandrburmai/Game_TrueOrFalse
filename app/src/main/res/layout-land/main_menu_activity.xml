@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +8,6 @@
         android:id="@+id/textView"
         android:layout_width="192dp"
         android:layout_height="72dp"
-        android:layout_marginBottom="43dp"
         android:layout_marginEnd="96dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="62dp"
@@ -17,7 +15,6 @@
         android:textAlignment="center"
         android:textColor="?android:attr/colorForeground"
         android:textSize="28sp"
-        app:layout_constraintBottom_toTopOf="@+id/startGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,16 +25,17 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="107dp"
         android:layout_marginStart="107dp"
+        android:layout_marginTop="21dp"
         android:text="Розпочати гру"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/profile"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="80dp"
         android:layout_marginEnd="107dp"
         android:layout_marginStart="107dp"
         android:layout_marginTop="28dp"

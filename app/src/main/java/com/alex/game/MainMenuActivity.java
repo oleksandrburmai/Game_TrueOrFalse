@@ -13,7 +13,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.main_menu_activity);
 
         findViewById(R.id.startGame).setOnClickListener(this);
-        findViewById(R.id.records).setOnClickListener(this);
+        //findViewById(R.id.records).setOnClickListener(this);
         findViewById(R.id.profile).setOnClickListener(this);
     }
 
@@ -22,10 +22,6 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         if (v.getId() == R.id.startGame) {
             Intent intent = new Intent(MainMenuActivity.this, GameActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-            startActivity(intent);
-        } else if (v.getId() == R.id.records) {
-            Intent intent = new Intent(MainMenuActivity.this, RecordActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(intent);
         } else if (v.getId() == R.id.profile) {
